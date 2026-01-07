@@ -103,11 +103,13 @@ export default function App() {
   );
 }
 
-function ActionButton({ icon, label }: { icon: React.ReactNode, label: string }) {
+function ActionButton({ icon, label }: { icon: React.ReactElement; label: string }) {
   return (
     <div className="flex flex-col items-center gap-2 group cursor-pointer">
       <div className="w-12 h-12 rounded-full border border-gray-500/50 flex items-center justify-center text-gray-300 group-hover:bg-white/10 transition">
-        {React.cloneElement(icon as React.ReactElement, { className: "w-6 h-6" })}
+        {React.cloneElement(icon as React.ReactElement<{ className?: string }>, {
+          className: "w-6 h-6",
+        })}
       </div>
       <span className="text-gray-400 text-sm font-light">{label}</span>
     </div>
