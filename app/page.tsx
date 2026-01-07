@@ -28,7 +28,7 @@ export default function App() {
       <header className="flex justify-between items-center p-4 pt-6 z-10 relative">
         <div className="w-10 h-10 rounded-full bg-gray-300 overflow-hidden border-2 border-white/20">
           {/* Placeholder for User Avatar */}
-          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://i.pravatar.cc/150?img=11')" }}></div>
+          <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('/profile.jpg')" }}></div>
         </div>
         <div className="text-3xl font-bold tracking-tighter text-white/90">
           K<span className="text-[#00ff80]">+</span>
