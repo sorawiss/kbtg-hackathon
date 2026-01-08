@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 export default function App() {
   return (
@@ -73,7 +74,9 @@ export default function App() {
 
         {/* Main Actions Grid */}
         <div className="grid grid-cols-4 gap-y-8 gap-x-2 px-4 mt-8 z-10 relative">
-          <ActionButton icon={<ArrowRightLeft />} label="โอนเงิน" />
+          <Link href="/transfer">
+            <ActionButton icon={<ArrowRightLeft />} label="โอนเงิน" />
+          </Link>
           <ActionButton icon={<Download />} label="เติมเงิน" />
           <ActionButton icon={<ScanBarcode />} label="จ่ายบิล" />
           <ActionButton icon={<Banknote />} label="ถอนเงิน" />
