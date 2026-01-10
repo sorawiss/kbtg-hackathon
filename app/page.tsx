@@ -51,6 +51,7 @@ export default function App() {
         <div className="relative flex flex-col items-center justify-center mt-8 z-10">
           <div className="w-64 h-64 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm flex flex-col items-center justify-center relative shadow-2xl">
             <span className="text-gray-300 text-lg font-light">ยอดเงินที่ใช้ได้</span>
+            <span className="text-white-300 text-3xl font-medium">10,000,000.00</span>
 
             {/* Settings Icon inside circle */}
             <div className="absolute bottom-6 right-8 p-1 rounded-full bg-white/10 hover:bg-white/20 transition cursor-pointer">

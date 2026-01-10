@@ -35,11 +35,10 @@ export default function TransferPage() {
                         </div>
 
                         <div className="flex gap-6 overflow-x-auto pb-2 no-scrollbar">
-                            <FavoriteItem name="อลิชา" color="bg-red-500" />
-                            <FavoriteItem name="สมชาย" color="bg-blue-500" />
-                            <FavoriteItem name="บัญชีพี่ชาย" color="bg-green-500" />
-                            <FavoriteItem name="วนิดา" color="bg-purple-500" />
-                            <FavoriteItem name="พี่ธราย" color="bg-orange-500" />
+                            <FavoriteItem name="อลิชา" color="bg-green-500" />
+                            <FavoriteItem name="สมชาย" color="bg-red-500" />
+                            <FavoriteItem name="วนิดา" color="bg-orange-500" />
+                            <FavoriteItem name="พี่ธราย" color="bg-blue-500" />
                         </div>
                     </div>
 
