@@ -14,7 +14,7 @@ export default function LandingPage() {
                         <div className="w-8 h-8 rounded bg-[#34d1bc] flex items-center justify-center">
                             <ShieldCheck className="text-[#0a0f1c] w-5 h-5" />
                         </div>
-                        <span className="font-bold text-xl tracking-tight">K-Fraud Intelligence</span>
+                        <span className="font-bold text-xl tracking-tight">AI Two-Way Fraud Detection & Prevention</span>
                     </div>
                     {/* <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
                         <a href="#features" className="hover:text-[#34d1bc] transition">Features</a>
