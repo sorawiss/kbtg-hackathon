@@ -16,11 +16,11 @@ export default function LandingPage() {
                         </div>
                         <span className="font-bold text-xl tracking-tight">K-Fraud Intelligence</span>
                     </div>
-                    <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
+                    {/* <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
                         <a href="#features" className="hover:text-[#34d1bc] transition">Features</a>
                         <a href="#technology" className="hover:text-[#34d1bc] transition">Technology</a>
                         <a href="#impact" className="hover:text-[#34d1bc] transition">Impact</a>
-                    </div>
+                    </div> */}
                     <Link href="/transfer" className="px-5 py-2.5 bg-[#34d1bc]/10 text-[#34d1bc] border border-[#34d1bc]/20 rounded-full font-medium text-sm hover:bg-[#34d1bc] hover:text-[#0a0f1c] transition-all duration-300">
                         Try Demo
                     </Link>
@@ -62,12 +62,12 @@ export default function LandingPage() {
                     </div>
 
                     {/* Stats */}
-                    <div className="mt-20 border-t border-white/5 pt-10 grid grid-cols-2 md:grid-cols-4 gap-8">
+                    {/* <div className="mt-20 border-t border-white/5 pt-10 grid grid-cols-2 md:grid-cols-4 gap-8">
                         <Stat label="Transactions Scanned" value="10M+" />
                         <Stat label="Fraud Prevented" value="$50M" />
                         <Stat label="Latency" value="<50ms" />
                         <Stat label="False Positives" value="0.01%" />
-                    </div>
+                    </div> */}
                 </div>
             </section>
 
