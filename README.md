@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# K-Fraud Intelligence 🛡️
 
-## Getting Started
+> **Protecting Every Transaction, In Real-Time.**
+> *KBTG Hackathon 2024 Entry*
 
-First, run the development server:
+## 🚨 The Problem
+Mobile banking fraud is at an all-time high. From **call center gangs** to **remote control malware**, scammers are stealing millions daily. Traditional fraud detection happens *after* the money is gone. Banks need a way to stop fraud **while it's happening**, without ruining the experience for legitimate customers.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 💡 Our Solution
+**K-Fraud Intelligence** is a real-time security middleware that sits between the mobile app and the banking core. It uses on-device telemetry and AI to detect signs of coercion, remote access, and mule account patterns instantly.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**It's an invisible shield that only activates when danger is detected.**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Key Features
+For this hackathon, we built a real-time dashboard that lets you see exactly what the AI sees:
+- **Risk Score (0-100)**
+- **Device Trust Level**
+- **Behavioral Biometrics**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📱 Interactive Demo
 
-## Learn More
+Experience the solution yourself. We have pre-configured 3 scenarios to demonstrate the system's logic.
 
-To learn more about Next.js, take a look at the following resources:
+**[Launch Live Demo](https://k-fraud-intelligence.demo)** *(Local: `npm run dev` and go to `/transfer`)*
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Demo Scenarios
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Navigate to the **Transfer** menu. You will see three contacts representing different risk levels:
 
-## Deploy on Vercel
+| User | Scenario | What Happens? |
+| :--- | :--- | :--- |
+| **P'Alicha** <br>*(The Innocent User)* | ✅ **Safe** | **No Friction.** The transfer goes through instantly. This proves that security doesn't have to hurt UX. |
+| **Somchai** <br>*(The Scammer)* | ⛔ **High Risk** | **Blocked.** The system detects an **Active Call** and **Screen Sharing**. Providing immediate protection. |
+| **Wanida** <br>*(The Mule)* | ⚠️ **Medium Risk** | **Warning.** The system detects a **New Beneficiary** anomaly and warns the user to be careful. |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌟 Why K-Fraud Intelligence?
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Zero Friction**: 99.9% of users never see a warning.
+- **Real-Time**: Decisions made in <50ms.
+- **Proactive**: Stops the money *before* it leaves the wallet.
+
+---
+*Created for the KBTG Hackathon.*
