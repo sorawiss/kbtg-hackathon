@@ -1,6 +1,6 @@
 # AI Two-Way Fraud Detection & Prevention
 
-Website https://kbtg.sorawiss.com/
+Website https://kbtg.sorawiss.com/landingpage
 
 > **Protecting Every Transaction, In Real-Time.**
 > *KBTG Hackathon 2024 Entry*
