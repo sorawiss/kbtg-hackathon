@@ -42,7 +42,7 @@ export default function FraudDashboard({ recipientName }: { recipientName: strin
         <div className="hidden lg:flex flex-col w-96 bg-[#111827] text-gray-100 p-6 border-l border-gray-800 h-screen sticky top-0 overflow-y-auto font-mono text-sm shadow-2xl z-50">
             <h2 className="text-lg font-bold mb-6 flex items-center gap-2 text-white border-b border-gray-800 pb-4">
                 <ShieldAlert className="text-[#34d1bc]" />
-                K-Fraud Intelligence
+                AI Two-Way Fraud Detection & Prevention
             </h2>
 
             {/* Overall Status */}
@@ -119,9 +119,7 @@ export default function FraudDashboard({ recipientName }: { recipientName: strin
             </div>
 
             <div className="mt-8 pt-4 border-t border-gray-800 text-xs text-gray-600">
-                <p>System ID: KBTG-HACK-2024</p>
-                <p>Latency: 45ms</p>
-                <p>Model: FraudGuard-v2.1</p>
+                <p>System ID: KBTG-HACK-2026</p>
             </div>
         </div>
     );

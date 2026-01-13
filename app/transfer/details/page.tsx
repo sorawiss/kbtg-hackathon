@@ -122,23 +122,38 @@ function TransferDetailsContent() {
                     </div>
                 </div>
 
-                {/* Block Alert Overlay */}
+                {/* Safety Check Modal */}
                 {showBlockAlert && (
-                    <div className="absolute inset-0 bg-black/60 flex items-center justify-center z-50 p-6 backdrop-blur-sm">
-                        <div className="bg-white rounded-xl p-6 text-center shadow-2xl max-w-sm w-full animate-in fade-in zoom-in duration-200">
-                            <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <AlertTriangle className="w-8 h-8 text-red-500" />
+                    <div className="absolute inset-0 bg-black/80 flex items-center justify-center z-50 p-6 backdrop-blur-md animate-in fade-in duration-300">
+                        <div className="bg-white rounded-2xl p-6 text-center shadow-2xl max-w-sm w-full relative overflow-hidden">
+                            {/* Calming Header */}
+                            <div className="absolute top-0 left-0 w-full h-2 bg-orange-400"></div>
+
+                            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <AlertTriangle className="w-8 h-8 text-orange-500" />
                             </div>
-                            <h3 className="text-xl font-bold text-gray-800 mb-2">ระงับการโอนเงิน</h3>
-                            <p className="text-gray-600 text-sm mb-6">
-                                ระบบตรวจพบความเสี่ยงสูงในการทำรายการนี้ เพื่อความปลอดภัยของท่าน กรุณาติดต่อธนาคาร
+
+                            <h3 className="text-xl font-bold text-gray-800 mb-3">ช้าก่อน... ตรวจสอบอีกนิด</h3>
+                            <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+                                ระบบพบความเสี่ยงในบัญชีปลายทาง <br />
+                                <strong>คุณอาจกำลังถูกหลอกให้โอนเงิน</strong> <br />
+                                <span className="text-xs text-gray-400 mt-2 block">หากโอนแล้ว ท่านอาจไม่ได้รับเงินคืน</span>
                             </p>
-                            <button
-                                onClick={() => setShowBlockAlert(false)}
-                                className="w-full py-3 bg-red-500 text-white rounded-lg font-medium hover:bg-red-600 transition"
-                            >
-                                ตกลง
-                            </button>
+
+                            <div className="space-y-3">
+                                <button
+                                    onClick={() => setShowBlockAlert(false)}
+                                    className="w-full py-3 bg-[#34d1bc] text-white rounded-xl font-bold text-lg hover:bg-[#2cbfae] transition shadow-md"
+                                >
+                                    ยกเลิกรายการ (ปลอดภัย)
+                                </button>
+                                <button
+                                    onClick={() => router.push(`/transfer/receipt?name=${encodeURIComponent(recipientName)}&amount=${amount}`)}
+                                    className="w-full py-2 text-gray-400 text-sm hover:text-gray-600 transition underline decoration-gray-300 underline-offset-4"
+                                >
+                                    ยืนยันที่จะโอน (ยอมรับความเสี่ยง)
+                                </button>
+                            </div>
                         </div>
                     </div>
                 )}
