@@ -3,7 +3,7 @@
 Website https://kbtg.sorawiss.com/landingpage
 
 > **Protecting Every Transaction, In Real-Time.**
-> *KBTG Hackathon 2024 Entry*
+> *KBTG Hackathon 2025*
 
 ## The Problem
 Mobile banking fraud is at an all-time high. From **call center gangs** to **remote control malware**, scammers are stealing millions daily. Traditional fraud detection happens *after* the money is gone. Banks need a way to stop fraud **while it's happening**, without ruining the experience for legitimate customers.
